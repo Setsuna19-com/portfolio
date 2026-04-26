@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dev Portfolio | John Mandolado</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="toast" id="toast">✓ Message sent! I'll get back to you soon.</div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mobile-nav-link">About</a>
+    <a href="#skills" class="mobile-nav-link">Skills</a>
+    <a href="#experience" class="mobile-nav-link">Experience</a>
+    <a href="#projects" class="mobile-nav-link">Projects</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
+    <a href="public/resume.pdf" download class="mobile-resume-btn">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Download Resume
+    </a>
+  </div>
+
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">&lt;<span>John</span>.dev/&gt;</a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="public/resume.pdf" download class="btn-resume">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Resume
+      </a>
+      <button class="theme-toggle" id="themeToggle" title="Toggle theme">☀</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-grid">
+      <div class="hero-content">
+        <p class="hero-eyebrow">// available for opportunities</p>
+        <h1 class="hero-name">John<br><span class="accent">Morin</span></h1>
+        <p class="hero-title">Full-Stack Software Developer<br>Building fast, scalable, and elegant digital experiences.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+          <a href="public/resume.pdf" download class="btn btn-dl">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Resume
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-code-card">
+          <div class="code-header">
+            <div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div>
+          </div>
+          <div><span class="code-kw">const</span> <span class="code-fn">developer</span> = {</div>
+          <div>&nbsp;&nbsp;name: <span class="code-str">"John Albert Morin"</span>,</div>
+          <div>&nbsp;&nbsp;role: <span class="code-str">"Full-Stack Dev"</span>,</div>
+          <div>&nbsp;&nbsp;stack: [<span class="code-str">"React"</span>, <span class="code-str">"Node"</span>, <span class="code-str">"Go"</span>],</div>
+          <div>&nbsp;&nbsp;experience: <span class="code-num">5</span> + <span class="code-str">" years"</span>,</div>
+          <div>&nbsp;&nbsp;available: <span class="code-kw">true</span>,</div>
+          <div>};</div><br>
+          <div><span class="code-cm">// currently thinking about...</span></div>
+          <div><span class="code-fn">console</span>.log(<span class="code-str">"Let's build something"</span>)<span class="blink">█</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-inner">
+      <p class="section-label reveal">// 001 — about</p>
+      <h2 class="section-title reveal">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-avatar-wrap reveal">
+          <div class="about-avatar">👨‍💻</div>
+          <div class="avatar-frame"></div>
+        </div>
+        <div>
+          <div class="about-text reveal">
+            <p>Hey! I'm <strong>John Albert Morin</strong>, a IT Support Specialist here at the Private school of bacolod city.</p>
+            <p>I specialize in building scalable web applications from the ground up — from architecting APIs to polishing pixel-perfect interfaces. I thrive at the intersection of <strong>engineering and design</strong>.</p>
+            <p>When I'm not shipping code, you'll find me exploring open-source projects, reading about distributed systems, or brewing the perfect cup of coffee.</p>
+          </div>
+          <div class="about-stats reveal">
+            <div class="stat-box"><span class="stat-num">5+</span><div class="stat-label">Years Experience</div></div>
+            <div class="stat-box"><span class="stat-num">40+</span><div class="stat-label">Projects Shipped</div></div>
+            <div class="stat-box"><span class="stat-num">12+</span><div class="stat-label">Happy Clients</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-inner">
+      <p class="section-label reveal">// 002 — skills</p>
+      <h2 class="section-title reveal">Tech Stack</h2>
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <div class="skill-cat-title">⚡ Frontend</div>
+          <div class="skill-tags">
+            <span class="skill-tag">React</span><span class="skill-tag">Next.js</span>
+            <span class="skill-tag">TypeScript</span><span class="skill-tag">Vue.js</span>
+            <span class="skill-tag">Tailwind CSS</span><span class="skill-tag">Framer Motion</span>
+            <span class="skill-tag">GraphQL</span>
+          </div>
+        </div>
+        </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 <span class="accent">albertmorin011@gmail.com</span>. Designed & built with intention.</p>
+    <p>[ <span class="accent">Open to work</span> ]</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
